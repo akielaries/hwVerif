@@ -37,4 +37,5 @@ module encoder_bench;
 	 $monitor("t=%3d in=%4b,out=%3b", $time, in, out);
   end
 
+
 endmodule
