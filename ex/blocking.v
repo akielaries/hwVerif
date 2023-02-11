@@ -6,7 +6,7 @@ initial begin
     $monitor("%d %d %d %d %d %d at time %0t", a, b, c, d, e, f, $time);
 
     // sim assigns 1 to a at time 10
-    a = #10 1'b1;
+    a = #5 1'b1;
     // assign 0 to b @ 30
     b = #20 1'b0;
     // assign 1 to c @ 70
