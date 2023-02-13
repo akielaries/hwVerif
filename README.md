@@ -12,4 +12,6 @@ serve as a learning process for hardware related tasks on my own
 circuit based projects.
 
 
+# Tools
+Using **iverilog** & **NVC** to work with Verilog and VHDL files.
 
