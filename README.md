@@ -13,5 +13,7 @@ circuit based projects.
 
 
 # Tools
-Using **iverilog** & **NVC** to work with Verilog and VHDL files.
+* Using **iverilog** & **NVC** to work with Verilog and VHDL files.
+* GTKWave to visualize signals
+
 
