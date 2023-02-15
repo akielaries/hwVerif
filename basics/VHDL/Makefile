@@ -16,4 +16,3 @@ $(EXEC): $(TEST) $(SRC)
 clean:
 	$(GHDL) --clean
 	rm -f $(EXEC) *.cf
-
