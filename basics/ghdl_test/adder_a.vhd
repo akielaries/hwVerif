@@ -1,10 +1,10 @@
-entity adder is
+entity adder_a is
   -- `i0`, `i1`, and the carry-in `ci` are inputs of the adder.
   -- `s` is the sum output, `co` is the carry-out.
   port (i0, i1 : in bit; ci : in bit; s : out bit; co : out bit);
-end adder;
+end adder_a;
 
-architecture rtl of adder is
+architecture rtl of adder_a is
 begin
   --  This full-adder architecture contains two concurrent assignments.
   --  Compute the sum.
