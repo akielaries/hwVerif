@@ -11,8 +11,12 @@ all: $(EXEC)
 $(EXEC): $(TEST) $(SRC)
 	$(GHDL) -a $(TEST) $(SRC)
 	$(GHDL) -e $(BNCH)
+	$(GHDL) -r $(BNCH)
+
+simulate:
 	$(GHDL) -r $(BNCH) --fst=adder_dump.fst
+	gtkwave adder_dump.fst
 
 clean:
 	$(GHDL) --clean
-	rm -f $(EXEC) *.cf
+	rm -f $(EXEC) *.cf *.vcd *.fst

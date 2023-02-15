@@ -1,0 +1,139 @@
+$date
+	Wed Feb 15 00:55:07 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module tb_fifo_32 $end
+$var wire 1 ! fifo_underflow $end
+$var wire 1 " fifo_threshold $end
+$var wire 1 # fifo_overflow $end
+$var wire 1 $ fifo_full $end
+$var wire 1 % fifo_empty $end
+$var wire 8 & data_out [7:0] $end
+$var reg 1 ' clk $end
+$var reg 8 ( data_in [7:0] $end
+$var reg 6 ) raddr [5:0] $end
+$var reg 1 * rd $end
+$var reg 1 + rst_n $end
+$var reg 6 , waddr [5:0] $end
+$var reg 1 - wr $end
+$var integer 32 . i [31:0] $end
+$scope module tb $end
+$var wire 1 ' clk $end
+$var wire 8 / data_in [7:0] $end
+$var wire 1 * rd $end
+$var wire 1 + rst_n $end
+$var wire 1 - wr $end
+$var wire 5 0 wptr [4:0] $end
+$var wire 5 1 rptr [4:0] $end
+$var wire 1 2 fifo_we $end
+$var wire 1 ! fifo_underflow $end
+$var wire 1 " fifo_threshold $end
+$var wire 1 3 fifo_rd $end
+$var wire 1 # fifo_overflow $end
+$var wire 1 $ fifo_full $end
+$var wire 1 % fifo_empty $end
+$var wire 8 4 data_out [7:0] $end
+$scope module top1 $end
+$var wire 1 ' clk $end
+$var wire 1 2 fifo_we $end
+$var wire 1 + rst_n $end
+$var wire 1 - wr $end
+$var wire 1 $ fifo_full $end
+$var reg 5 5 wptr [4:0] $end
+$upscope $end
+$scope module top2 $end
+$var wire 1 ' clk $end
+$var wire 1 3 fifo_rd $end
+$var wire 1 * rd $end
+$var wire 1 + rst_n $end
+$var wire 1 % fifo_empty $end
+$var reg 5 6 rptr [4:0] $end
+$upscope $end
+$scope module top3 $end
+$var wire 1 ' clk $end
+$var wire 8 7 data_in [7:0] $end
+$var wire 8 8 data_out [7:0] $end
+$var wire 1 2 fifo_we $end
+$var wire 5 9 rptr [4:0] $end
+$var wire 5 : wptr [4:0] $end
+$upscope $end
+$scope module top4 $end
+$var wire 1 ' clk $end
+$var wire 1 ; fbit_comp $end
+$var wire 1 3 fifo_rd $end
+$var wire 1 2 fifo_we $end
+$var wire 1 < overflow_set $end
+$var wire 1 * rd $end
+$var wire 5 = rptr [4:0] $end
+$var wire 1 + rst_n $end
+$var wire 1 > underflow_set $end
+$var wire 5 ? wptr [4:0] $end
+$var wire 1 - wr $end
+$var wire 5 @ pointer_result [4:0] $end
+$var wire 1 A pointer_equal $end
+$var reg 1 % fifo_empty $end
+$var reg 1 $ fifo_full $end
+$var reg 1 # fifo_overflow $end
+$var reg 1 " fifo_threshold $end
+$var reg 1 ! fifo_underflow $end
+$upscope $end
+$upscope $end
+$scope task clock_generator $end
+$upscope $end
+$scope task debug_fifo $end
+$upscope $end
+$scope task endsimulation $end
+$upscope $end
+$scope task main $end
+$upscope $end
+$scope task operation_process $end
+$scope begin RDE $end
+$upscope $end
+$scope begin WRE $end
+$upscope $end
+$upscope $end
+$scope task reset_generator $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#400000
+$dumpvars
+1A
+b0 @
+b10000 ?
+0>
+b10000 =
+0<
+0;
+b10000 :
+b10000 9
+b1 8
+b10001 7
+b10000 6
+b10000 5
+b1 4
+03
+02
+b10000 1
+b10000 0
+b10001 /
+b10001 .
+0-
+b10001 ,
+1+
+0*
+b10000 )
+b10001 (
+0'
+b1 &
+1%
+0$
+0#
+0"
+1!
+$end
