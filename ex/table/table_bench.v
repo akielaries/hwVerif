@@ -19,6 +19,8 @@ module table_bench;
         #20 x = 1;
         #20 y = 0;
         #20;
+        $dumpfile("table_bench.fst");
+        $dumpvars(0);
     end
 
     initial begin

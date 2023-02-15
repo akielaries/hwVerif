@@ -33,32 +33,36 @@ begin
                     b <= '0';
                     ci <= '0';
                     wait for 10 ns;
-                    assert S = '0' and co = '0' report "Test case 1 failed" severity error;
+                    assert S = '0' and co = '0' 
+                        report "[-] case 1 failed" severity error;
                 when 2 =>
                     -- Test case 2: a=1, b=0, ci=0
                     a <= '1';
                     b <= '0';
                     ci <= '0';
                     wait for 10 ns;
-                    assert S = '1' and co = '0' report "Test case 2 failed" severity error;
+                    assert S = '1' and co = '0' 
+                        report "[-] case 2 failed" severity error;
                 when 3 =>
                     -- Test case 3: a=1, b=1, ci=0
                     a <= '1';
                     b <= '1';
                     ci <= '0';
                     wait for 10 ns;
-                    assert S = '0' and co = '1' report "Test case 3 failed" severity error;
+                    assert S = '0' and co = '1' 
+                        report "[-] case 3 failed" severity error;
                 when 4 =>
                     -- Test case 4: a=1, b=1, ci=1
                     a <= '1';
                     b <= '1';
                     ci <= '1';
                     wait for 10 ns;
-                    assert S = '1' and co = '1' report "Test case 4 failed" severity error;
+                    assert S = '1' and co = '1' 
+                        report "[-] case 4 failed" severity error;
             end case;
         end loop;
         -- End the simulation
-        report "END OF TEST BENCH" severity note;
+        report "[+] END OF TEST BENCH" severity note;
         wait;
     end process;
 

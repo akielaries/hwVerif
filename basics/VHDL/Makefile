@@ -11,7 +11,7 @@ all: $(EXEC)
 $(EXEC): $(TEST) $(SRC)
 	$(GHDL) -a $(TEST) $(SRC)
 	$(GHDL) -e $(BNCH)
-	$(GHDL) -r $(BNCH)
+	$(GHDL) -r $(BNCH) --fst=adder_dump.fst
 
 clean:
 	$(GHDL) --clean
