@@ -3,3 +3,5 @@
 *.hpp
 *.c
 *.cc
+**/obj_*/Makefile
+
