@@ -14,38 +14,38 @@ module adder_tb;
             case (i)
                 1: begin
                     // test case 1: a=0, b=0, ci=0
-                    a <= '0';
-                    b <= '0';
-                    ci <= '0';
+                    a = 0;
+                    b = 0;
+                    ci = 0;
                     #10;
-                    if (S !== '0' || co !== '0')
+                    if (S !== 0 || co !== 0)
                         $error("[-] case 1 failed");
                 end
                 2: begin
                     // test case 2: a=1, b=0, ci=0
-                    a <= '1';
-                    b <= '0';
-                    ci <= '0';
+                    a = 1;
+                    b = 0;
+                    ci = 0;
                     #10;
-                    if (S !== '1' || co !== '0')
+                    if (S !== 1 || co !== 0)
                         $error("[-] case 2 failed");
                 end
                 3: begin
                     // test case 3: a=1, b=1, ci=0
-                    a <= '1';
-                    b <= '1';
-                    ci <= '0';
+                    a = 1;
+                    b = 1;
+                    ci = 0;
                     #10;
-                    if (S !== '0' || co !== '1')
+                    if (S !== 0 || co !== 1)
                         $error("[-] case 3 failed");
                 end
                 4: begin
                     // test case 4: a=1, b=1, ci=1
-                    a <= '1';
-                    b <= '1';
-                    ci <= '1';
+                    a = 1;
+                    b = 1;
+                    ci = 1;
                     #10;
-                    if (S !== '1' || co !== '1')
+                    if (S !== 1 || co !== 1)
                         $error("[-] case 4 failed");
                 end
             endcase
