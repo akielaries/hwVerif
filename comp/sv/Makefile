@@ -8,10 +8,10 @@ VERIL_FLAGS	= --binary --trace -j 0
 all: sim
 
 sim: simple_comp 
-	./obj_dir/Vsimple
+	./obj_dir/Vone_bit
 
-simple_comp: simple.sv simple_tb.sv
-	$(VERIL) $(VERIL_FLAGS) simple.sv simple_tb.sv
+simple_comp: one_bit.sv one_bit_tb.sv
+	$(VERIL) $(VERIL_FLAGS) one_bit.sv one_bit_tb.sv 
 
 clean:
 	rm -rf obj_dir *.vcd

@@ -27,10 +27,10 @@ module simple_comparator_tb;
         $monitor("%d, %d = %d \n", input_a, input_b, res);
     end
 
-    initial begin
-        $dumpfile("simple_comparator.vcd");
-        $dumpvars(0, simple_comparator_tb);
-    end
+    //initial begin
+    //    $dumpfile("simple_comparator.vcd");
+    //    $dumpvars(0, simple_comparator_tb);
+    //end
 
 
 

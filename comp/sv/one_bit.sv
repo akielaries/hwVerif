@@ -6,8 +6,8 @@ module simple_comparator(
     output logic res
     );
     
-    // assign res = (~input_a & ~input_b) | (input_a & input_b);
-    assign res = (input_a == input_b) ? 1'b1 : 1'b0;
+    assign res = (~input_a & ~input_b) | (input_a & input_b);
+    //assign res = (input_a == input_b) ? 1'b1 : 1'b0;
 
 endmodule
 
