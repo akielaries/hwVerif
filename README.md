@@ -16,5 +16,7 @@ circuit based projects.
 * Using **iverilog** for working with Verilog files and generating files
 necessary for syntehsis.
 * **NVC** & **GHDL** for doing the with VHDL. 
-* **GTKWave** to visualize signals
+* **Verilator** for working with System Verilog files.
+* **GTKWave** to visualize signals/running simulations. 
+* **cocotb** for test benches.
 
