@@ -19,4 +19,5 @@ necessary for syntehsis.
 * **Verilator** for working with System Verilog files.
 * **GTKWave** to visualize signals/running simulations. 
 * **cocotb** for test benches.
+* **Yosys** for synthesis and generating schematics.
 
