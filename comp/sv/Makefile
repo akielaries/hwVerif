@@ -1,5 +1,3 @@
-# Makefile for simple Verilator compilation
-
 VERIL		= verilator
 VERIL_FLAGS	= --binary --trace -j 0
 
