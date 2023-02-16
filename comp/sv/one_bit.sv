@@ -1,3 +1,12 @@
+/*
+ * 1-bit binary comparator
+ *
+ * RANGE :
+ *      0 TO 2^n - 1
+ *      0 TO 2^1 - 1 = 1
+ *      0 TO 1 OR 0 & 1 ONLY
+ */
+
 `timescale 1ns/1ps
 
 module simple_comparator(
